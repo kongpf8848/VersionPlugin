@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javapoet-1.7.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../software/android-sdk-windows/extras/m2repository/com/squareup/javapoet/1.7.0/javapoet-1.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
