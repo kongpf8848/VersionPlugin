@@ -30,7 +30,7 @@ advancedVersioning{
 ## 插件内置属性
 | 属性  | 说明 |
 | :------| :------ | 
-| appName | app名称，如sab|
+| appName | app名称，如sky|
 | flavorName | 渠道名称，此值可能为空，如定义productFlavors则不为空，如xiaomi,huawei,360... |
 | buildType | 版本类型，如debug,release...|
 | versionName | 版本名称|
