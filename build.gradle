@@ -17,14 +17,17 @@ dependencies {
     compile gradleApi()
     compile localGroovy()
     compile 'com.android.tools.build:gradle:2.1.2'
+    compile('org.codehaus.groovy.modules.http-builder:http-builder:0.7.2') {
+        exclude(module: 'groovy')
+    }
 
 }
 
 repositories {
     mavenCentral()
-
+    jcenter()
 }
-group = 'com.kongpf.gradle.plugin'
+group = 'com.github.kongpf8848.plugin'
 version = '1.0.0'
 def siteUrl = 'https://github.com/kongpf8848/VersionPlugin'
 def gitUrl = 'https://github.com/kongpf8848/VersionPlugin.git'

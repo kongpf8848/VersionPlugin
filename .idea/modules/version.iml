@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="version" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="com.kongpf.gradle.plugin" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
-  <component name="FacetManager">
-    <facet type="android-gradle" name="Android-Gradle">
-      <configuration>
-        <option name="GRADLE_PROJECT_PATH" value=":" />
-      </configuration>
-    </facet>
-    <facet type="java-gradle" name="Java-Gradle">
-      <configuration>
-        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/../../build" />
-        <option name="BUILDABLE" value="true" />
-      </configuration>
-    </facet>
-  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output url="file://$MODULE_DIR$/../../build/classes/main" />
-    <output-test url="file://$MODULE_DIR$/../../build/classes/test" />
+    <output url="file://$MODULE_DIR$/../../out/production/classes" />
+    <output-test url="file://$MODULE_DIR$/../../out/test/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../..">
       <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
@@ -26,11 +13,17 @@
       <sourceFolder url="file://$MODULE_DIR$/../../src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/../../.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../out" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: com.android.tools.build:gradle:2.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.groovy.modules.http-builder:http-builder:0.7.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools.build:gradle-core:2.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: net.sf.json-lib:json-lib:2.3:jdk15" level="project" />
+    <orderEntry type="library" name="Gradle: net.sourceforge.nekohtml:nekohtml:1.9.16" level="project" />
+    <orderEntry type="library" name="Gradle: xml-resolver:xml-resolver:1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools.build:builder:2.1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools.lint:lint:25.1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools.build:transform-api:2.0.0-deprecated-use-gradle-api" level="project" />
@@ -41,6 +34,14 @@
     <orderEntry type="library" name="Gradle: net.sf.proguard:proguard-gradle:5.2.1" level="project" />
     <orderEntry type="library" name="Gradle: org.jacoco:org.jacoco.core:0.7.4.201502262128" level="project" />
     <orderEntry type="library" name="Gradle: org.antlr:antlr:3.5.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.6" level="project" />
+    <orderEntry type="library" name="Gradle: commons-beanutils:commons-beanutils:1.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-lang:commons-lang:2.4" level="project" />
+    <orderEntry type="library" name="Gradle: net.sf.ezmorph:ezmorph:1.0.6" level="project" />
+    <orderEntry type="library" name="Gradle: xerces:xercesImpl:2.9.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools.build:builder-model:2.1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools.build:builder-test-api:2.1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools:sdklib:25.1.2" level="project" />
@@ -66,12 +67,12 @@
     <orderEntry type="library" name="Gradle: org.ow2.asm:asm-debug-all:5.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.antlr:antlr-runtime:3.5.2" level="project" />
     <orderEntry type="library" name="Gradle: org.antlr:ST4:4.0.8" level="project" />
+    <orderEntry type="library" name="Gradle: xml-apis:xml-apis:1.3.04" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools.layoutlib:layoutlib-api:25.1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools:dvlib:25.1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools:repository:25.1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.2.4" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-compress:1.8.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.1.1" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpmime:4.1" level="project" />
     <orderEntry type="library" name="Gradle: net.sf.kxml:kxml2:2.3.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools.lint:lint-api:25.1.2" level="project" />
@@ -79,77 +80,10 @@
     <orderEntry type="library" name="Gradle: com.tunnelvisionlabs:antlr4-runtime:4.5" level="project" />
     <orderEntry type="library" name="Gradle: com.tunnelvisionlabs:antlr4-annotations:4.5" level="project" />
     <orderEntry type="library" name="Gradle: com.intellij:annotations:12.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.1" level="project" />
-    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.4" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools.external.lombok:lombok-ast:0.2.3" level="project" />
     <orderEntry type="library" name="Gradle: org.abego.treelayout:org.abego.treelayout.core:1.0.1" level="project" />
     <orderEntry type="library" name="Gradle: gradle-api-3.3" level="project" />
     <orderEntry type="library" name="Gradle: groovy-all-2.4.7" level="project" />
     <orderEntry type="library" name="Gradle: gradle-installation-beacon-3.3" level="project" />
-    <orderEntry type="library" exported="" name="gradle-2.1.2" level="project" />
-    <orderEntry type="library" exported="" name="gradle-core-2.1.2" level="project" />
-    <orderEntry type="library" exported="" name="builder-2.1.2" level="project" />
-    <orderEntry type="library" exported="" name="lint-25.1.2" level="project" />
-    <orderEntry type="library" exported="" name="transform-api-2.0.0-deprecated-use-gradle-api" level="project" />
-    <orderEntry type="library" exported="" name="gradle-api-2.1.2" level="project" />
-    <orderEntry type="library" exported="" name="compilerCommon-2.1.2" level="project" />
-    <orderEntry type="library" exported="" name="asm-5.0.3" level="project" />
-    <orderEntry type="library" exported="" name="asm-commons-5.0.3" level="project" />
-    <orderEntry type="library" exported="" name="proguard-gradle-5.2.1" level="project" />
-    <orderEntry type="library" exported="" name="org.jacoco.core-0.7.4.201502262128" level="project" />
-    <orderEntry type="library" exported="" name="antlr-3.5.2" level="project" />
-    <orderEntry type="library" exported="" name="builder-model-2.1.2" level="project" />
-    <orderEntry type="library" exported="" name="builder-test-api-2.1.2" level="project" />
-    <orderEntry type="library" exported="" name="sdklib-25.1.2" level="project" />
-    <orderEntry type="library" exported="" name="sdk-common-25.1.2" level="project" />
-    <orderEntry type="library" exported="" name="common-25.1.2" level="project" />
-    <orderEntry type="library" exported="" name="manifest-merger-25.1.2" level="project" />
-    <orderEntry type="library" exported="" name="ddmlib-25.1.2" level="project" />
-    <orderEntry type="library" exported="" name="jack-api-0.10.0" level="project" />
-    <orderEntry type="library" exported="" name="jill-api-0.10.0" level="project" />
-    <orderEntry type="library" exported="" name="javawriter-2.5.0" level="project" />
-    <orderEntry type="library" exported="" name="bcpkix-jdk15on-1.48" level="project" />
-    <orderEntry type="library" exported="" name="bcprov-jdk15on-1.48" level="project" />
-    <orderEntry type="library" exported="" name="asm-tree-5.0.3" level="project" />
-    <orderEntry type="library" exported="" name="lint-checks-25.1.2" level="project" />
-    <orderEntry type="library" exported="" name="ecj-4.4.2" level="project" />
-    <orderEntry type="library" exported="" name="annotations-25.1.2" level="project" />
-    <orderEntry type="library" exported="" name="guava-17.0" level="project" />
-    <orderEntry type="library" exported="" name="baseLibrary-2.1.2" level="project" />
-    <orderEntry type="library" exported="" name="antlr4-4.5" level="project" />
-    <orderEntry type="library" exported="" name="commons-io-2.4" level="project" />
-    <orderEntry type="library" exported="" name="juniversalchardet-1.0.3" level="project" />
-    <orderEntry type="library" exported="" name="proguard-base-5.2.1" level="project" />
-    <orderEntry type="library" exported="" name="asm-debug-all-5.0.1" level="project" />
-    <orderEntry type="library" exported="" name="antlr-runtime-3.5.2" level="project" />
-    <orderEntry type="library" exported="" name="ST4-4.0.8" level="project" />
-    <orderEntry type="library" exported="" name="layoutlib-api-25.1.2" level="project" />
-    <orderEntry type="library" exported="" name="dvlib-25.1.2" level="project" />
-    <orderEntry type="library" exported="" name="repository-25.1.2" level="project" />
-    <orderEntry type="library" exported="" name="gson-2.2.4" level="project" />
-    <orderEntry type="library" exported="" name="commons-compress-1.8.1" level="project" />
-    <orderEntry type="library" exported="" name="httpclient-4.1.1" level="project" />
-    <orderEntry type="library" exported="" name="httpmime-4.1" level="project" />
-    <orderEntry type="library" exported="" name="kxml2-2.3.0" level="project" />
-    <orderEntry type="library" exported="" name="lint-api-25.1.2" level="project" />
-    <orderEntry type="library" exported="" name="asm-analysis-5.0.3" level="project" />
-    <orderEntry type="library" exported="" name="antlr4-runtime-4.5" level="project" />
-    <orderEntry type="library" exported="" name="antlr4-annotations-4.5" level="project" />
-    <orderEntry type="library" exported="" name="annotations-12.0" level="project" />
-    <orderEntry type="library" exported="" name="httpcore-4.1" level="project" />
-    <orderEntry type="library" exported="" name="commons-logging-1.1.1" level="project" />
-    <orderEntry type="library" exported="" name="commons-codec-1.4" level="project" />
-    <orderEntry type="library" exported="" name="lombok-ast-0.2.3" level="project" />
-    <orderEntry type="library" exported="" name="org.abego.treelayout.core-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="gradle-api-3.3" level="project" />
-    <orderEntry type="library" exported="" name="groovy-all-2.4.7" level="project" />
-    <orderEntry type="library" exported="" name="gradle-installation-beacon-3.3" level="project" />
-    <orderEntry type="library" exported="" name="version.version-1.0.0" level="project" />
-    <orderEntry type="library" exported="" name="version.version-1.0.0-javadoc" level="project" />
-    <orderEntry type="library" exported="" name="version.version-1.0.0-sources" level="project" />
-    <orderEntry type="library" exported="" name="version.version-1.0.0" level="project" />
-    <orderEntry type="library" exported="" name="version.version-1.0.0" level="project" />
-    <orderEntry type="library" exported="" name="version.version-1.0.0" level="project" />
   </component>
 </module>
