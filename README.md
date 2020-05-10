@@ -16,7 +16,7 @@ apply plugin: 'version'
 advancedVersioning{
     outputOptions{
         renameOutput true       
-        nameFormat 'xxx_${buildType}_${versionName}_${versionCode}'
+        nameFormat 'xxx_${versionName}_${versionCode}'
     }
 }
 ```
@@ -30,7 +30,7 @@ advancedVersioning{
 ## 插件内置属性
 | 属性  | 说明 |
 | :------| :------ | 
-| appName | app名称，如zab|
+| appName | app名称，如sab|
 | flavorName | 渠道名称，此值可能为空，如定义productFlavors则不为空，如xiaomi,huawei,360... |
 | buildType | 版本类型，如debug,release...|
 | versionName | 版本名称|
