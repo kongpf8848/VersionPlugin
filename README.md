@@ -1,6 +1,6 @@
 # VersionPlugin
 
-## 使用方法
+## 使用
 
 + 在项目根目录的build.gralde脚本中添加以下代码：
 ```gradle
