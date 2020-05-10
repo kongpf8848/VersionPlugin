@@ -2,7 +2,7 @@
 
 ## 使用方法
 
-+ 在项目的根目录build.gralde脚本中添加以下代码：
++ 在项目根目录的build.gralde脚本中添加以下代码：
 ```gradle
     dependencies {
         classpath 'com.github.kongpf8848.plugin:version:1.0.0'
