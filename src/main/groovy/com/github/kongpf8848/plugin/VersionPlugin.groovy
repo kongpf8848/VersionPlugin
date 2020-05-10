@@ -7,9 +7,9 @@ class VersionPlugin implements Plugin<Project> {
     @Override
     void apply(Project project) {
 
-        println("++++++++VersionPlugin")
+        //println("++++++++VersionPlugin")
         def androidGradlePlugin = getAndroidPluginVersion(project)
-        println("++++++++androidGradlePlugin:${androidGradlePlugin}")
+        //println("++++++++androidGradlePlugin:${androidGradlePlugin}")
         if (androidGradlePlugin == null) {
             throw new IllegalStateException("The Android Gradle plugin not found")
         } else if (!checkAndroidVersion(androidGradlePlugin.version)) {
@@ -17,11 +17,8 @@ class VersionPlugin implements Plugin<Project> {
         }
         def advancedVersioning = project.extensions.create("advancedVersioning", AdvancedBuildVersionExtension, project)
         project.afterEvaluate {
-            println("++++++++afterEvaluate")
             if (advancedVersioning.outputOptions.renameOutput) {
-                println("++++++++renameOutput true")
                 project.android.applicationVariants.all {
-                    println("++++++++generateOutputName")
                     advancedVersioning.outputOptions.generateOutputName(project, it)
                 }
 

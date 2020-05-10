@@ -6,32 +6,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileContent/annotation-processors.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/version.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/version.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/kongpf/gradle/plugin/VersionPlugin.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/kongpf/gradle/plugin/internal/AdvancedBuildVersionExtension.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/kongpf/gradle/plugin/internal/FileOutputOptions.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/kongpf/gradle/plugin/internal/VersionNameOptions.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/gradle-plugins/version.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/gradle-plugins/version.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/github/kongpf8848/plugin/FileOutputOptions.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/github/kongpf8848/plugin/FileOutputOptions.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/com/github/kongpf8848/plugin/VersionPlugin.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/com/github/kongpf8848/plugin/VersionPlugin.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +102,7 @@
     <property name="project.structure.side.proportion" value="0.4343318" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Gradle.VersionPlugin [install]">
+  <component name="RunManager" selected="Gradle.VersionPlugin [bintrayUpload]">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -144,6 +121,25 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="VersionPlugin [bintrayUpload]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bintrayUpload" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="VersionPlugin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -210,6 +206,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.VersionPlugin [bintrayUpload]" />
         <item itemvalue="Gradle.VersionPlugin [install]" />
         <item itemvalue="Gradle.VersionPlugin [build]" />
       </list>
@@ -242,22 +239,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="835" y="419" width="274" height="202" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589107586181" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1589107518308">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1589108875158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589107518308" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1589107518308">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589108875158" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1589108875158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589107518308" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1589107518308">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589108875158" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1589108875158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589107518308" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1589107518308">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589108875158" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1589108875158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589107518308" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589108875158" />
     <state x="440" y="98" key="SettingsEditor" timestamp="1589102792593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

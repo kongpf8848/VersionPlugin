@@ -30,19 +30,17 @@ class FileOutputOptions {
                 'versionCode': variant.versionCode
         ]
 
-        println("++++++++appName:${project.name}")
-        println("++++++++variant:${variant}")
-        println("++++++++project name:${project.rootProject.name}")
-        println("++++++++flavorName:${variant.flavorName}")
-        println("++++++++buildType:${variant.buildType.name}")
-        println("++++++++versionName:${variant.versionName}")
-        println("++++++++versionCode:${variant.versionCode}")
+        //println("++++++++appName:${project.name}")
+        //println("++++++++variant:${variant}")
+        //println("++++++++project name:${project.rootProject.name}")
+        //println("++++++++flavorName:${variant.flavorName}")
+        //println("++++++++buildType:${variant.buildType.name}")
+        //println("++++++++versionName:${variant.versionName}")
+        //println("++++++++versionCode:${variant.versionCode}")
         def defaultTemplate =(!isEmpty(variant.flavorName)) ? '$appName-$flavorName-$buildType-$versionName-$versionCode' : '$appName-$buildType-$versionName-$versionCode'
 
         def template = nameFormat == null ? defaultTemplate : nameFormat
         def fileName = templateEngine.createTemplate(template).make(map).toString()+".apk"
-
-        println("++++++++fileName:${fileName}")
         def androidGradlePlugin = VersionPlugin.getAndroidPluginVersion(project)
 
         if (androidGradlePlugin != null && androidGradlePlugin.version.startsWith("3.")) {
