@@ -40,7 +40,10 @@ class FileOutputOptions {
         def defaultTemplate =(!isEmpty(variant.flavorName)) ? '$appName-$flavorName-$buildType-$versionName-$versionCode' : '$appName-$buildType-$versionName-$versionCode'
 
         def template = nameFormat == null ? defaultTemplate : nameFormat
-        def fileName = templateEngine.createTemplate(template).make(map).toString()+".apk"
+        def fileName = templateEngine.createTemplate(template).make(map).toString()
+        if(!fileName.endsWith(".apk")){
+            fileName+=".apk"
+        }
         def androidGradlePlugin = VersionPlugin.getAndroidPluginVersion(project)
 
         if (androidGradlePlugin != null && androidGradlePlugin.version.startsWith("3.")) {
