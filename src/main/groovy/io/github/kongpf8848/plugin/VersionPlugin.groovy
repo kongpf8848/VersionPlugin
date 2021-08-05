@@ -1,4 +1,5 @@
-package com.github.kongpf8848.plugin
+package io.github.kongpf8848.plugin
+
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
@@ -6,22 +7,16 @@ class VersionPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
-
-        //println("++++++++VersionPlugin")
         def androidGradlePlugin = getAndroidPluginVersion(project)
-        //println("++++++++androidGradlePlugin:${androidGradlePlugin}")
         if (androidGradlePlugin == null) {
             throw new IllegalStateException("The Android Gradle plugin not found")
-        } else if (!checkAndroidVersion(androidGradlePlugin.version)) {
-            throw new IllegalStateException("The Android Gradle plugin ${androidGradlePlugin.version} is not supported.")
         }
         def advancedVersioning = project.extensions.create("advancedVersioning", AdvancedBuildVersionExtension, project)
-        project.afterEvaluate {
-            if (advancedVersioning.outputOptions.renameOutput) {
-                project.android.applicationVariants.all {
+        project.configurations {
+            project.android.applicationVariants.all {
+                if (advancedVersioning.outputOptions.renameOutput) {
                     advancedVersioning.outputOptions.generateOutputName(project, it)
                 }
-
             }
         }
     }

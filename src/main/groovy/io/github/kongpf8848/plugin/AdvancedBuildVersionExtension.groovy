@@ -1,6 +1,6 @@
-package com.github.kongpf8848.plugin
+package io.github.kongpf8848.plugin
 
-import com.github.kongpf8848.plugin.FileOutputOptions
+
 import org.gradle.api.Project
 
 import javax.inject.Inject

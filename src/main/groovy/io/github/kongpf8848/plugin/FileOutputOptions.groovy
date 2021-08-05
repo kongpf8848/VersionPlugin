@@ -1,5 +1,4 @@
-package com.github.kongpf8848.plugin
-
+package io.github.kongpf8848.plugin
 
 import groovy.text.SimpleTemplateEngine
 import org.gradle.api.Project
@@ -20,7 +19,7 @@ class FileOutputOptions {
         nameFormat = format
     }
 
-    def generateOutputName(Project project, variant) {
+    def generateOutputName(Project project,variant) {
         def map = [
                 'appName'    : project.name,
                 'projectName': project.rootProject.name,
@@ -45,14 +44,9 @@ class FileOutputOptions {
             fileName+=".apk"
         }
         def androidGradlePlugin = VersionPlugin.getAndroidPluginVersion(project)
-
-        if (androidGradlePlugin != null && androidGradlePlugin.version.startsWith("3.")) {
+        if (androidGradlePlugin != null) {
             variant.outputs.all { output ->
-                outputFileName = "${fileName}"
-            }
-        } else {
-            variant.outputs.each { output ->
-                output.outputFile = new File(output.outputFile.parent, fileName)
+                output.outputFileName="${fileName}"
             }
         }
     }
