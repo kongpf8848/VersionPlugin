@@ -2,21 +2,26 @@
 
 ## 使用
 
-+ 在项目根目录的build.gralde脚本中添加以下代码：
+* 在项目根目录的```build.gradle```中添加以下代码：
 ```gradle
-    dependencies {
-        classpath 'com.github.kongpf8848.plugin:version:1.0.0'
+ buildscript {
+    repositories {
+        mavenCentral()
     }
+    dependencies {
+        classpath 'io.github.kongpf8848:version-plugin:1.0.1'
+    }
+}
 ```
 
-* 在app模块的build.gradle中添加以下代码：
+* 在```app```模块的```build.gradle```中添加以下代码：
 ```gradle
 apply plugin: 'version'
 
 advancedVersioning{
     outputOptions{
         renameOutput true       
-        nameFormat 'xxx_${versionName}_${versionCode}'
+        nameFormat 'xxx_${buildType}_${versionName}_${versionCode}'
     }
 }
 ```
